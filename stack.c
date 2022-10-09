@@ -1,13 +1,31 @@
 #include "monty.h"
+
 /**
- * f_stack - prints the top
- * @head: stack head
- * @counter: line_number
+ * _queue - sets the format of the data to a queue (FIFO)
+ *
+ * @doubly: head of the linked list
+ * @cline: line number;
  * Return: no return
-*/
-void f_stack(stack_t **head, unsigned int counter)
+ */
+void _queue(stack_t **doubly, unsigned int cline)
 {
-	(void)head;
-	(void)counter;
-	bus.lifi = 0;
+	(void)doubly;
+	(void)cline;
+
+	vglo.lifo = 0;
+}
+
+/**
+ * _stack - sets the format fo the data to a stack (LIFO)
+ *
+ * @doubly: head of the linked list
+ * @cline: line number;
+ * Return: no return
+ */
+void _stack(stack_t **doubly, unsigned int cline)
+{
+	(void)doubly;
+	(void)cline;
+
+	vglo.lifo = 1;
 }
